@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipili CB-Lens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Shipili CB-Lens</h2>
+      <label class="switch">
+        <input type="checkbox" id="toggleExtension">
+        <span class="slider round"></span>
+      </label>
+    </header>
+
+    <div class="description">
+      <p>Enhancing web accessibility for color blindness.</p>
+    </div>
+
+    <div class="controls">
+      <label for="typeSelect">Condition Type</label>
+        <select id="typeSelect">
+          <option value="protanopia">Protanopia (Red-Blind)</option>
+          <option value="deuteranopia">Deuteranopia (Green-Blind)</option>
+          <option value="tritanopia">Tritanopia (Blue-Blind)</option>
+          <option value="achromatopsia">Achromatopsia (Monochromacy)</option>
+       </select>
+
+      <label for="intensityRange">Intensity</label>
+      <input type="range" id="intensityRange" min="0" max="100" value="100">
+    </div>
+
+    <div class="footer-links">
+      <a href="../pages/developer.html" target="_blank">Developer Info</a>
+      <a href="../pages/donate.html" target="_blank">Donate</a>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
