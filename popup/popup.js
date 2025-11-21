@@ -2,9 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('toggleExtension');
   const typeSelect = document.getElementById('typeSelect');
   const intensityRange = document.getElementById('intensityRange');
-  const intensityValue = document.getElementById('intensityValue'); // المنت جدید
-  const statusText = document.getElementById('statusText'); // المنت جدید
-
+  const intensityValue = document.getElementById('intensityValue'); 
+  const statusText = document.getElementById('statusText'); 
   // Default settings
   let settings = {
     enabled: false,

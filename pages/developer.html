@@ -1,17 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Developer Info - Shipili</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Info - Shipili CB-Lens</title>
   <style>
-    body { font-family: sans-serif; padding: 2rem; max-width: 600px; margin: 0 auto; line-height: 1.6; }
-    h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
+    :root {
+      --primary: #4F46E5;
+      --primary-dark: #3730a3;
+      --github-color: #24292e;
+      --bg-color: #F3F4F6;
+      --text-main: #1F2937;
+      --text-sub: #6B7280;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      width: 100%;
+      max-width: 480px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    /* Header Section */
+    .header-bg {
+      background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+      padding: 40px 20px;
+      color: white;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(5px);
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      font-weight: bold;
+      border: 4px solid rgba(255, 255, 255, 0.3);
+    }
+
+    h1 { margin: 0; font-size: 24px; }
+    .subtitle { opacity: 0.9; font-size: 14px; margin-top: 5px; }
+
+    /* Content Section */
+    .content { padding: 30px; }
+
+    .bio {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text-sub);
+      margin-bottom: 30px;
+    }
+
+    .support-box {
+      background: #EEF2FF;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #E0E7FF;
+    }
+
+    .support-text {
+      font-size: 14px;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    /* Buttons */
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-github {
+      background-color: var(--github-color);
+      color: white;
+    }
+    .btn-github:hover { background-color: #000; transform: translateY(-2px); }
+
+    .btn-donate {
+      background-color: var(--primary);
+      color: white;
+    }
+    .btn-donate:hover { background-color: var(--primary-dark); transform: translateY(-2px); }
+
+    footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #9CA3AF;
+    }
   </style>
 </head>
 <body>
-  <h1>Developer Information</h1>
-  <p><strong>Name:</strong> LaneZero</p>
-  <p><strong>Project:</strong> Shipili CB-Lens</p>
-  <p>This extension was built to provide accessible internet browsing for everyone, adhering to WCAG 2.1 AA standards.</p>
-  <p><strong>Source Code:</strong> <a href="https://github.com/LaneZero/shipili-cb-lens">GitHub Repository</a></p>
+
+  <div class="card">
+    <div class="header-bg">
+      <div class="avatar">LZ</div>
+      <h1>LaneZero</h1>
+      <div class="subtitle">Full-Stack Extension Developer</div>
+    </div>
+
+    <div class="content">
+      <p class="bio">
+        <strong>Shipili CB-Lens</strong> is crafted with care to make the web accessible for everyone. 
+        It strictly follows WCAG 2.1 AA standards to ensure a seamless experience for users with color vision deficiencies.
+      </p>
+
+      <div class="support-box">
+        <p class="support-text">Enjoying the extension? Support the project!</p>
+        <div class="btn-group">
+          <a href="https://github.com/LaneZero/shipili-cb-lens" target="_blank" class="btn btn-github">
+            <span>★ Star on GitHub</span>
+          </a>
+          <a href="donate.html" class="btn btn-donate">
+            <span>❤️ Donate</span>
+          </a>
+        </div>
+      </div>
+
+      <footer>
+        &copy; 2025 Shipili Project. Open Source.
+      </footer>
+    </div>
+  </div>
+
 </body>
 </html>
