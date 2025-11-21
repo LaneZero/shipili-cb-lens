@@ -181,7 +181,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 - **Issues:** [GitHub Issues](https://github.com/yourusername/shipili-cb-lens/issues)
 - **Discussions:** [GitHub Discussions](https://github.com/yourusername/shipili-cb-lens/discussions)
-- **Email:** support@shipili-lens.example.com
+
 
 ---
 
