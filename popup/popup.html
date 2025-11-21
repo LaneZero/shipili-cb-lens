@@ -7,37 +7,64 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
+  
+  <div class="app-container">
+    <!-- Header Section -->
     <header>
-      <h2>Shipili CB-Lens</h2>
+      <div class="brand">
+        <div class="logo-icon">S</div>
+        <div class="title-group">
+          <h1>Shipili Lens</h1>
+          <span class="status-badge" id="statusText">Disabled</span>
+        </div>
+      </div>
+      
+      <!-- Modern Toggle -->
       <label class="switch">
         <input type="checkbox" id="toggleExtension">
         <span class="slider round"></span>
       </label>
     </header>
 
-    <div class="description">
-      <p>Enhancing web accessibility for color blindness.</p>
-    </div>
+    <!-- Main Controls -->
+    <main>
+      <div class="control-group">
+        <label for="typeSelect" class="label-title">Color Blindness Type</label>
+        <div class="select-wrapper">
+          <select id="typeSelect">
+            <option value="protanopia">Protanopia (Red-Blind)</option>
+            <option value="deuteranopia">Deuteranopia (Green-Blind)</option>
+            <option value="tritanopia">Tritanopia (Blue-Blind)</option>
+            <option value="achromatopsia">Achromatopsia (Mono)</option>
+          </select>
+          <span class="arrow">▼</span>
+        </div>
+      </div>
 
-    <div class="controls">
-      <label for="typeSelect">Condition Type</label>
-        <select id="typeSelect">
-          <option value="protanopia">Protanopia (Red-Blind)</option>
-          <option value="deuteranopia">Deuteranopia (Green-Blind)</option>
-          <option value="tritanopia">Tritanopia (Blue-Blind)</option>
-          <option value="achromatopsia">Achromatopsia (Monochromacy)</option>
-       </select>
+      <div class="control-group">
+        <div class="range-header">
+          <label for="intensityRange" class="label-title">Correction Intensity</label>
+          <span id="intensityValue" class="range-value">100%</span>
+        </div>
+        <div class="range-wrapper">
+          <input type="range" id="intensityRange" min="0" max="100" value="100">
+          <div class="range-track-bg"></div>
+        </div>
+      </div>
+    </main>
 
-      <label for="intensityRange">Intensity</label>
-      <input type="range" id="intensityRange" min="0" max="100" value="100">
-    </div>
-
-    <div class="footer-links">
-      <a href="../pages/developer.html" target="_blank">Developer Info</a>
-      <a href="../pages/donate.html" target="_blank">Donate</a>
-    </div>
+    <!-- Footer -->
+    <footer>
+      <a href="../pages/developer.html" target="_blank" class="footer-btn">
+        <span>Developer</span>
+      </a>
+      <div class="divider"></div>
+      <a href="../pages/donate.html" target="_blank" class="footer-btn highlight">
+        <span>Donate ❤️</span>
+      </a>
+    </footer>
   </div>
+
   <script src="popup.js"></script>
 </body>
 </html>
