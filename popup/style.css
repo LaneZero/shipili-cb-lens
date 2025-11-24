@@ -179,7 +179,7 @@ select:focus { border-color: var(--primary); background: white; }
 
 input[type="range"] {
   width: 100%;
-  -webkit-appearance: none;
+  --webkit-appearance: none;
   background: transparent;
   cursor: pointer;
 }
