@@ -20,7 +20,7 @@
 <sub>Chrome, Edge, Brave & Chromium browsers</sub>
 </td>
 <td align="center" width="50%">
-<a href="https://addons.mozilla.org/fr/firefox/addon/shipili-cb-lens/">
+<a href="https://addons.mozilla.org/en-US/firefox/addon/shipili-cb-lens/">
 <img src="https://img.shields.io/badge/Firefox-Available-FF7139?style=for-the-badge&logo=firefox&logoColor=white" alt="Firefox Add-ons"/>
 </a>
 <br/>
