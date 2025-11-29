@@ -13,14 +13,14 @@
 <table>
 <tr>
 <td align="center" width="50%">
-<a href="CHROME_WEBSTORE_LINK_HERE">
+<a href="https://chromewebstore.google.com/detail/shipili-cb-lens/kgaldpdafbndppmgfmnhmjnnphcpfemd?authuser=0&hl=en">
 <img src="https://img.shields.io/badge/Chrome-Available-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Web Store"/>
 </a>
 <br/>
 <sub>Chrome, Edge, Brave & Chromium browsers</sub>
 </td>
 <td align="center" width="50%">
-<a href="FIREFOX_ADDONS_LINK_HERE">
+<a href="https://addons.mozilla.org/fr/firefox/addon/shipili-cb-lens/">
 <img src="https://img.shields.io/badge/Firefox-Available-FF7139?style=for-the-badge&logo=firefox&logoColor=white" alt="Firefox Add-ons"/>
 </a>
 <br/>
